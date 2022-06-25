@@ -36,7 +36,7 @@ export default function Home() {
         <div className={style.intro}>
           <Container>
             <Row>
-              <Col>
+              <Col sm={12} md={6}>
                 <div className={style.center}>
                   <h1 className={style.header}>BonoBooks</h1>
                   <p className={style.flavor}>The peer to peer textbook renting app made to make your life easier!</p>
@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
               </Col>
 
-              <Col>
+              <Col sm={12} md={6}>
               </Col>
             </Row>
           </Container>
