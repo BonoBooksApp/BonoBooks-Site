@@ -32,12 +32,34 @@
 
 /* Introduction Section */
 .intro {
-    height: 800px;
+    height: 640px;
     background-image: url("../public/images/layer1.svg"),
                       url("../public/images/layer2.svg"),
                       url("../public/images/layer3.svg");
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 800px, 870px, 940px;
+    background-size: 700px, 750px, 800px;
     margin-top: 70px; 
 }
+
+.header {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.flavor {
+    font-size: 1.5rem;
+    width: 450px;
+}
+
+.downloadButton {
+    background-color: #24C85B;
+    margin-right: 25px;
+    height: 40px;
+}
+
+.center {
+    padding-top: 20%;
+}
+
+
