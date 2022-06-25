@@ -12,7 +12,7 @@
     margin-left: 0;;
     font-size: 1.7rem;
     font-weight: 700;
-    padding-top: 5px;
+    padding-top: 0.5%;
 }
 
 .navLink {
@@ -32,14 +32,14 @@
 
 /* Introduction Section */
 .intro {
-    height: 640px;
+    height: 650px;
     background-image: url("../public/images/layer1.svg"),
                       url("../public/images/layer2.svg"),
                       url("../public/images/layer3.svg");
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 700px, 750px, 800px;
-    margin-top: 70px; 
+    background-size: auto 100%;
+    margin-top: 4%; 
 }
 
 .header {
@@ -49,17 +49,18 @@
 
 .flavor {
     font-size: 1.5rem;
-    width: 450px;
+    width: 70%;
 }
 
 .downloadButton {
     background-color: #24C85B;
-    margin-right: 25px;
-    height: 40px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    height: 3%;
 }
 
 .center {
-    padding-top: 20%;
+    padding-top: 30%;
 }
 
 
