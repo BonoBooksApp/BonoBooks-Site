@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'next/image';
-import style from '../styles/nav.module.css'
+import style from '../../styles/nav.module.css'
 
 export default function NavigationBar() {
     return(
@@ -15,7 +15,7 @@ export default function NavigationBar() {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav bsPrefix={style.nav}>
                   <Nav.Link bsPrefix={style.navLink} href="#features">Product</Nav.Link>
-                  <Nav.Link bsPrefix={style.navLink} href="#pricing">About Us</Nav.Link>
+                  <Nav.Link bsPrefix={style.navLink} href="#about-us">About Us</Nav.Link>
                   <Nav.Link bsPrefix={style.navLink} href="#help">Help</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
