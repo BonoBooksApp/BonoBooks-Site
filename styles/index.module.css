@@ -1,19 +1,25 @@
-/* Mobile First approach, Current CSS designed with mobile phones in mind
+/* Mobile First approach, Current CSS designed with mobile phones in mind */
+.body {
+    background: linear-gradient(276.6deg, rgba(109, 207, 142, 0.42) 7%, rgba(109, 207, 142, 0.294) 109.33%);
+}
+
 /* Navbar CSS */
 .navbar {
     background-color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+    padding-right: 0;
 }
 
 .wrapper {
     margin-left: 0;
+    margin-right: 0;
 }
 
 .brandName {
-    margin-left: 0;;
     font-size: 1.7rem;
     font-weight: 700;
     padding-top: 0.5%;
+    padding-left: 5%;
 }
 
 .navLink {
@@ -33,8 +39,7 @@
 
 /* Introduction Section */
 .intro {
-    margin-top: 10%;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-bottom: 10%;
     text-align: center;
     background: linear-gradient(276.6deg, rgba(109, 207, 142, 0.42) 7%, rgba(109, 207, 142, 0.294) 109.33%);
@@ -60,6 +65,22 @@
     height: 3%;
 }
 
+.imageSection {
+    position: relative;
+}
+
+.image {
+    height: 70%;
+    width: 70%;
+}
+
+.phone1 {
+    position: absolute;
+}
+
+.quickDownload {
+    display: none;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -73,16 +94,20 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .body {
+        background:none;
+    }
     /* Introduction Section */
     .intro {
-        height: 650px;
+        height: 680px;
         background-image: url("../public/images/layer1.svg"),
                         url("../public/images/layer2.svg"),
                         url("../public/images/layer3.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
-        background-size: auto 100%;
-        margin-top: 4%; 
+        background-size: auto auto auto; 
+        margin-top: 3%;
+        text-align: left;
     }
 
     .flavor {
@@ -90,11 +115,17 @@
     }
 
     .center {
-        padding-top: 30%;
+        padding-top: 0%;
+    }
+
+    .quickDownload {
+        display: contents;
+        /* background-color: linear-gradient(to left, #24C85B, #00BFE9); */
+        background-color: #24C85B;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
 
-}
+} */

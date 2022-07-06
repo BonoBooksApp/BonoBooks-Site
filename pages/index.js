@@ -14,20 +14,21 @@ import style from '../styles/index.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className={style.body}>
       <div>
           <Navbar fixed="top" collapseOnSelect expand="md" className={style.navbar}>
             <Container className={style.wrapper}>
-              <img src='/images/logo.svg'></img>
+              <img src='/images/logo.svg'/>
               <Navbar.Brand className={style.brandName} href="#home">BonoBooks</Navbar.Brand>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" className={style.toggler}/>
               <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav bsPrefix={style.nav}>
+                <Nav className="ml-auto" bsPrefix={style.nav}>
                   <Nav.Link bsPrefix={style.navLink} href="#features">Product</Nav.Link>
                   <Nav.Link bsPrefix={style.navLink} href="#about-us">About Us</Nav.Link>
                   <Nav.Link bsPrefix={style.navLink} href="#help">Help</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
+              <Button className={style.quickDownload}>Download Now!</Button>
             </Container>
         </Navbar>
       </div>
@@ -46,6 +47,10 @@ export default function Home() {
               </Col>
 
               <Col sm={12} md={6}>
+                <div className={style.imageSection}>
+                  <img className={`${style.phone1} ${style.image}`} src="/images/iphone.svg"/>
+                  {/* <img className={`${style.phone2} ${style.image}`} src='/images/iphone.svg'/> */}
+                </div>
               </Col>
             </Row>
           </Container>
