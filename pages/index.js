@@ -60,7 +60,7 @@ export default function Home() {
 
       <section id="about">
         <div className={style.about}>
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '100%', textAlign:'center'}}>
           <Card.Body>
             <Card.Title className={style.cardTitle}>What Is BonoBooks?</Card.Title>
             <Card.Text>
@@ -68,6 +68,33 @@ export default function Home() {
               your textbooks gathering dust after just one semester? Well worry no more! With 
               BonoBooks, we offer you a cheap and easy way to get the resources you need for your
               next class!
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '100%', textAlign:'center', margin: '0.5rem 0rem' }}>
+          <Card.Body>
+            <Card.Title>Step 1: Lender Puts Up Book</Card.Title>
+            <Card.Text>
+
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '100%', textAlign:'center', margin: '0.5rem 0rem'}}>
+          <Card.Body>
+            <Card.Title>Step 2: Renter Finds Book</Card.Title>
+            <Card.Text>
+
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '100%', textAlign:'center', marginTop: '0.5rem'}}>
+          <Card.Body>
+            <Card.Title>Step 3: User Exchange Book</Card.Title>
+            <Card.Text>
+
             </Card.Text>
           </Card.Body>
         </Card>
