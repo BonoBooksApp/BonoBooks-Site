@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
@@ -54,6 +55,22 @@ export default function Home() {
               </Col>
             </Row>
           </Container>
+        </div>
+      </section>
+
+      <section id="about">
+        <div className={style.about}>
+        <Card style={{ width: '18rem' }}>
+          <Card.Body>
+            <Card.Title className={style.cardTitle}>What Is BonoBooks?</Card.Title>
+            <Card.Text>
+              Feeling tired of buying and pirating textbooks for your classes? Tired of seeing 
+              your textbooks gathering dust after just one semester? Well worry no more! With 
+              BonoBooks, we offer you a cheap and easy way to get the resources you need for your
+              next class!
+            </Card.Text>
+          </Card.Body>
+        </Card>
         </div>
       </section>
 

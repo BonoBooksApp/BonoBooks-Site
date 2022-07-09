@@ -1,6 +1,8 @@
 /* Mobile First approach, Current CSS designed with mobile phones in mind */
 .body {
     background: linear-gradient(276.6deg, rgba(109, 207, 142, 0.42) 7%, rgba(109, 207, 142, 0.294) 109.33%);
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar CSS */
@@ -82,6 +84,16 @@
     display: none;
 }
 
+/* About Section */
+.about {
+    background-color: #E5E5E5;
+    padding: 1rem;
+}
+
+.cardTitle {
+    
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
@@ -119,7 +131,7 @@
     }
 
     .quickDownload {
-        display: contents;
+        display:block;
         /* background-color: linear-gradient(to left, #24C85B, #00BFE9); */
         background-color: #24C85B;
     }
