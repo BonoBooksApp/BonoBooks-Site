@@ -1,0 +1,138 @@
+/* Mobile First approach, Current CSS designed with mobile phones in mind */
+.body {
+  background: linear-gradient(276.6deg, rgba(109, 207, 142, 0.42) 7%, rgba(109, 207, 142, 0.294) 109.33%);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar CSS */
+.navbar {
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+  padding-right: 0;
+}
+
+.wrapper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.brandName {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-top: 0.5%;
+  padding-left: 5%;
+}
+
+.navLink {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+.navLink:hover {
+  color: #24C85B;
+  border-bottom-width: medium;
+  border-bottom-color: #24C85B;
+}
+
+/* Introduction Section */
+.intro {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  text-align: center;
+  background: linear-gradient(276.6deg, rgba(109, 207, 142, 0.42) 7%, rgba(109, 207, 142, 0.294) 109.33%);
+}
+
+.center {
+  padding-top: 10%;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.flavor {
+  font-size: 1.5rem;
+}
+
+.downloadButton {
+  background-color: #24C85B;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  height: 3%;
+}
+
+.imageSection {
+  position: relative;
+}
+
+.image {
+  height: 70%;
+  width: 70%;
+}
+
+.phone1 {
+  position: absolute;
+}
+
+.quickDownload {
+  display: none;
+}
+
+/* About Section */
+.about {
+  background-color: #E5E5E5;
+  padding: 1rem;
+}
+
+.cardTitle {
+  text-align: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .body {
+      background:none;
+  }
+  /* Introduction Section */
+  .intro {
+      height: 680px;
+      background-image: url("../public/images/layer1.svg"),
+                      url("../public/images/layer2.svg"),
+                      url("../public/images/layer3.svg");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: auto auto auto; 
+      margin-top: 3%;
+      text-align: left;
+  }
+
+  .flavor {
+      width: 70%;
+  }
+
+  .center {
+      padding-top: 0%;
+  }
+
+  .quickDownload {
+      display:block;
+      /* background-color: linear-gradient(to left, #24C85B, #00BFE9); */
+      background-color: #24C85B;
+  }
+}
