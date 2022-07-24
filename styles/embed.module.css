@@ -1,0 +1,27 @@
+.card {
+    border-radius: 7px;
+    background: linear-gradient(-45deg, #24C85B, #23d5ab, #23a6d5, #00BFE9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+    .card {
+        margin: 1rem 7rem;
+        padding-left: 14rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}

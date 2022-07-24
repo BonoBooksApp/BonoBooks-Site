@@ -9,6 +9,7 @@ import Card from 'react-bootstrap/Card';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
 
+import Embed from './Embed';
 import style from '../styles/index.module.css'
 
 
@@ -24,9 +25,10 @@ export default function Home() {
               <Navbar.Toggle aria-controls="responsive-navbar-nav" className={style.toggler}/>
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto" bsPrefix={style.nav}>
-                  <Nav.Link bsPrefix={style.navLink} href="#features">Product</Nav.Link>
+                  <Nav.Link bsPrefix={style.navLink} href="#products">Product</Nav.Link>
                   <Nav.Link bsPrefix={style.navLink} href="#about-us">About Us</Nav.Link>
                   <Nav.Link bsPrefix={style.navLink} href="#help">Help</Nav.Link>
+                  <Nav.Link bsPrefix={style.navLink}>Download Now</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
               <Button className={style.quickDownload}>Download Now!</Button>
@@ -58,46 +60,120 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about">
-        <div className={style.about}>
-        <Card style={{ width: '100%', textAlign:'center'}}>
-          <Card.Body>
-            <Card.Title className={style.cardTitle}>What Is BonoBooks?</Card.Title>
-            <Card.Text>
-              Feeling tired of buying and pirating textbooks for your classes? Tired of seeing 
-              your textbooks gathering dust after just one semester? Well worry no more! With 
-              BonoBooks, we offer you a cheap and easy way to get the resources you need for your
-              next class!
-            </Card.Text>
-          </Card.Body>
-        </Card>
+      <section id="products">
+        <div className={style.product}>
+          <Container>
+            <Row style={{margin:'0'}}>
+              <Card className={style.fullCard}>
+                <Card.Body>
+                  <Card.Title className={style.cardTitle}>What Is BonoBooks?</Card.Title>
+                  <Card.Text>
+                    Feeling tired of buying and pirating textbooks for your classes? Tired of seeing 
+                    your textbooks gathering dust after just one semester? Well worry no more! With 
+                    BonoBooks, we offer you a cheap and easy way to get the resources you need for your
+                    next class!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Row>
+          </Container>
 
-        <Card style={{ width: '100%', textAlign:'center', margin: '0.5rem 0rem' }}>
-          <Card.Body>
-            <Card.Title>Step 1: Lender Puts Up Book</Card.Title>
-            <Card.Text>
+          <Container>
+            <Row>
+              <Col sm={12} md={6}>
+                <Card className={style.card}>
+                  <Card.Body>
+                    <Card.Title>Step 1: Lender Puts Up Book</Card.Title>
+                    <Card.Text>
 
-            </Card.Text>
-          </Card.Body>
-        </Card>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-        <Card style={{ width: '100%', textAlign:'center', margin: '0.5rem 0rem'}}>
-          <Card.Body>
-            <Card.Title>Step 2: Renter Finds Book</Card.Title>
-            <Card.Text>
+              <Col sm={12} md={6}>
+                <Card className={style.card}>
+                    <Card.Body>
+                      <Card.Title>IMG</Card.Title>
+                      <Card.Text>
 
-            </Card.Text>
-          </Card.Body>
-        </Card>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+              </Col>
+            </Row>
+          </Container>
 
-        <Card style={{ width: '100%', textAlign:'center', marginTop: '0.5rem'}}>
-          <Card.Body>
-            <Card.Title>Step 3: User Exchange Book</Card.Title>
-            <Card.Text>
+          <Container>
+            <Row>
+              <Col sm={12} md={6}>
+                  <Card className={style.card}>
+                    <Card.Body>
+                      <Card.Title>IMG</Card.Title>
+                      <Card.Text>
 
-            </Card.Text>
-          </Card.Body>
-        </Card>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+              </Col>
+
+              <Col sm={12} md={6}>
+                <Card className={style.card}>
+                  <Card.Body>
+                    <Card.Title>Step 2: Renter Finds Book</Card.Title>
+                    <Card.Text>
+
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container>
+            <Row>
+              <Col sm={12} md={6}>
+                <Card className={style.card}>
+                  <Card.Body>
+                    <Card.Title>Step 3: Users Exchange Books</Card.Title>
+                    <Card.Text>
+
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col sm={12} md={6}>
+                <Card className={style.card}>
+                  <Card.Body>
+                    <Card.Title>IMG</Card.Title>
+                    <Card.Text>
+
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container>
+            <Row style={{margin:'0'}}>
+              <Card className={style.fullCard}>
+                <Card.Body>
+                  <Card.Title className={style.cardTitle}>IMG</Card.Title>
+                  <Card.Text>
+                    IMG
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Row>
+          </Container>
+        </div>
+      </section>
+
+      <section id='about-us'>
+        <div className='youtube'>
+          <Embed embedId='grzI7N0DVms'/>
         </div>
       </section>
 
