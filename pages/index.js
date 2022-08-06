@@ -28,7 +28,7 @@ export default function Home() {
                   <Nav.Link bsPrefix={style.navLink} href="#products">Product</Nav.Link>
                   <Nav.Link bsPrefix={style.navLink} href="#about-us">About Us</Nav.Link>
                   <Nav.Link bsPrefix={style.navLink} href="#help">Help</Nav.Link>
-                  <Nav.Link bsPrefix={style.navLink}>Download Now</Nav.Link>
+                  {/* <Nav.Link bsPrefix={style.navLink}>Download Now</Nav.Link> */}
                 </Nav>
               </Navbar.Collapse>
               <Button className={style.quickDownload}>Download Now!</Button>
