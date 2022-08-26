@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
 
-import Embed from './Embed';
+import Embed from '../bonobo/src/components/Embed';
 import style from '../styles/index.module.css'
 
 
