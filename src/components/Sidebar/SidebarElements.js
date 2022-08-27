@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import "./Sidebar.scss";
 import {Link as LinkRouter} from 'react-router-dom';

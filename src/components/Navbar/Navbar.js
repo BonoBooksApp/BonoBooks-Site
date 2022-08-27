@@ -4,7 +4,6 @@ import {FaBars} from 'react-icons/fa';
 
 const Navbar = (props) => {
     return(
-        <Fragment>
             <Nav>
                 <NavContainer>
                     <NavLogo to="/">BonoBooks</NavLogo>
@@ -26,7 +25,6 @@ const Navbar = (props) => {
                     </NavMenu>
                 </NavContainer>
             </Nav>
-        </Fragment>
     )
 }
 
