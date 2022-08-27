@@ -2,14 +2,14 @@ import { Fragment } from "react";
 import {Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 import {FaBars} from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return(
         <Fragment>
             <Nav>
                 <NavContainer>
                     <NavLogo to="/">BonoBooks</NavLogo>
                     
-                    <MobileIcon>
+                    <MobileIcon onClick={props.toggle}>
                         <FaBars/>
                     </MobileIcon>
 

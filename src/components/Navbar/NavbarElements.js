@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import {Link as LinkRouter} from 'react-router-dom';
 import {Link as LinkScroller} from 'react-scroll';
-import {FaBars} from 'react-icons/fa';
 
 export const Nav = styled.nav`
-    background: #000;
+    background-color: white;
     height: 80px;
-    // margin-top: -80px
+    margin-top: -80px
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,19 +21,19 @@ export const Nav = styled.nav`
 
 export const NavContainer = styled.div`
     display: flex;
-    justify-content: space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
 `;
 
 export const NavLogo = styled(LinkRouter)`
-    color: #fff;
+    color: black;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
     margin-left: 24px;
@@ -53,7 +52,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #fff;
+        color: black;
     }
 `
 
@@ -62,7 +61,9 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    // margin-right: -22px;
+    padding-top: 4px;
+    margin-left: 1.5rem;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -74,7 +75,9 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkScroller)`
-    color: #fff;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -83,6 +86,13 @@ export const NavLinks = styled(LinkScroller)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #24C85B;
+    }
+
+    &:hover {
+        color: #24C85B;
+        transition: 0.2s all ease;
+        border-bottom-width: medium;
+        border-bottom-color: #24C85B;
     }
 `

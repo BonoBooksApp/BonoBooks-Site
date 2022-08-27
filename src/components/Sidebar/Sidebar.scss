@@ -1,0 +1,62 @@
+@import "../sass/animations.scss"; 
+.container {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #24C85B, #23d5ab, #23a6d5, #00BFE9);
+    background-size: 400% 400%;
+    display: grid;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    animation: gradient 10s ease infinite;
+}
+
+.icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidebar {
+    &.-wrapper {
+        color: #fff;
+    }
+
+    &-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 80px);
+        text-align: center;
+        padding: 0;
+    
+        @media screen and (max-width: 480px) {
+            grid-template-rows: repeat(6, 60px);
+        }
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+        list-style: none;
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        margin: 1.5rem;
+    
+        &:hover {
+            color: #01bf71;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
