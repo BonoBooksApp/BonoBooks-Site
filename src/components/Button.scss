@@ -1,0 +1,50 @@
+@import "./sass/animations.scss";
+
+.btn {
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        border-radius: 100px;
+        transition: all .2s;
+        position: relative;
+        color: white;
+        z-index: 1000000;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(black,.2);
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .5s;
+    }
+}
+
+.btn-gb {
+    background: linear-gradient(-45deg, #24C85B, #23d5ab, #23a6d5, #00BFE9);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
