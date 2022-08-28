@@ -42,8 +42,6 @@ export default function Home() {
             <Row>
               <Col sm={12} md={6}>
                 <div className={style.center}>
-                  <h1 className={style.header}>BonoBooks</h1>
-                  <p className={style.flavor}>The peer to peer textbook renting app made to make your life easier!</p>
                   <Button className={style.downloadButton} href="https://apps.apple.com/us/app/bonobooks/id1586423229"><AppleIcon/><span className={style.downloadText}>Download for IOS</span></Button>
                   <Button className={style.downloadButton} href="https://play.google.com/store/apps/details?id=com.bonobooks.ugs"><AndroidIcon/><span className={style.downloadText}>Download for Android</span></Button>
                 </div>

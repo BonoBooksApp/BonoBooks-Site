@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import {Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 import {FaBars} from 'react-icons/fa';
 
