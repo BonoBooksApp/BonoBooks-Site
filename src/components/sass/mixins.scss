@@ -1,0 +1,9 @@
+@mixin moveInFromTop {
+    animation-name: moveFromTop;
+    animation-duration: 3s;
+}
+
+@mixin moveInFromBottom {
+    animation-name: moveFromBottom;
+    animation-duration: 3s;
+}

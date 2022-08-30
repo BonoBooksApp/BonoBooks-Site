@@ -1,19 +1,6 @@
 @import "./sass/animations.scss";
-
+@import "./sass/mixins.scss";
 .btn {
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 100px;
-    transition: all .2s;
-    position: relative;
-    color: white;
-    z-index: 1000000;
-    border: none;
-    margin-right: 1rem;
-    margin-top: 1rem;
-
     &:link,
     &:visited {
         display: inline-block;
@@ -26,6 +13,10 @@
         color: white;
         z-index: 1000000;
         border: none;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        @include moveInFromTop;
+        animation-iteration-count: 1;
     }
 
     &:hover {
@@ -60,5 +51,5 @@
 .btn-gb {
     background: linear-gradient(-45deg, #24C85B, #23d5ab, #23a6d5, #00BFE9);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 3s ease infinite;
 }
