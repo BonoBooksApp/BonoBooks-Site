@@ -3,7 +3,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
-import Hero from './components/Hero';
+import HomePage from './pages/HomePage';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,8 +17,7 @@ function App() {
     <Router>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
-      <Hero/>
-      
+      <HomePage/>
     </Router>
   );
 }

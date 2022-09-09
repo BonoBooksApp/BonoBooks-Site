@@ -11,9 +11,8 @@
         transition: all .2s;
         position: relative;
         color: white;
-        z-index: 1000000;
+        z-index: 90;
         border: none;
-        margin-right: 1rem;
         margin-top: 1rem;
         @include moveInFromTop;
         animation-iteration-count: 1;

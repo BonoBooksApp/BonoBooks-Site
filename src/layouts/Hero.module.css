@@ -1,39 +1,24 @@
-@import "./sass/animations.scss";
-@import "./sass/mixins.scss";
-
-.hero {
-    
-}
-
-.flex-container {
+.hero_container {
     display: flex;
     position: relative;
+    text-align: center;
+    padding: 7% 5%;
+    background: linear-gradient(276.6deg, rgba(109, 207, 142, 0.42) 7%, rgba(109, 207, 142, 0.294) 109.33%);
 }
 
-.left-child {
+.left_child {
     flex: 1;
-}
-
-.hero-content {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-60%);
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 700;
     margin: 0;
-    @include moveInFromBottom
 }
 
 .flavor {
     font-size: 1.5rem;
     margin: 0;
-    // width: 28rem;
-    @include moveInFromBottom
 }
 
 
@@ -42,7 +27,7 @@ h1 {
         background:none;
     }
     /* Introduction Section */
-    .hero {
+    .hero_container {
         background-image: url("../../public/images/layer1.svg"),
                         url("../../public/images/layer2.svg"),
                         url("../../public/images/layer3.svg");
@@ -50,7 +35,15 @@ h1 {
         background-position: bottom right;
         background-size: auto auto auto; 
         text-align: left;
-        height: calc(100vh - 60px);
         padding: 0 5%;
+        height: calc(100vh - 60px);
+    }
+
+    .hero_content {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-60%);
     }
 }
