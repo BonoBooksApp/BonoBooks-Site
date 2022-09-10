@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../styles/embed.module.css';
+import styles from './Embed.module.css';
 
 const Embed = (props) => (
   <div className={styles.card}>

@@ -7,12 +7,20 @@
     padding-left: 2.7rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    width: 98%;
+    display: flex;
+    justify-content: center;
 }
 
 .frame {
     border-radius: 7px; 
     width: 284px;
     height: 160px;
+
 }
 
 @keyframes gradient {
@@ -29,7 +37,6 @@
 
 @media only screen and (min-width: 768px) {
     .card {
-        margin: 1rem 7rem;
         padding-left: 14rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
