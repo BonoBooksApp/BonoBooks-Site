@@ -1,6 +1,7 @@
 import Hero from '../layouts/Hero';
 import About from '../layouts/About';
 import Embed from '../layouts/Embed';
+import Testemonials from '../layouts/Testemonials';
 import { Fragment } from 'react';
 const HomePage = () => {
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
             <Hero/>
             <About/>
             <Embed embedId="grzI7N0DVms"/>
+            <Testemonials/>
         </Fragment>
     )
 }

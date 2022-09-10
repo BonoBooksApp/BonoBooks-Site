@@ -4,32 +4,32 @@ import styles from './About.module.css';
 const About = () => {
     return(
         <Fragment>
-            <Card>Bruh1</Card>
+            <Card>Block Long</Card>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <Card>Bruh1</Card>
+                    <Card>Block 1</Card>
                 </div>
                 <div className={styles.col}>
-                    <Card>Bruh2</Card>
+                    <Card>Block 2</Card>
                 </div>
             </div>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <Card>Bruh1</Card>
+                    <Card>Block 1</Card>
                 </div>
                 <div className={styles.col}>
-                    <Card>Bruh2</Card>
+                    <Card>Block 2</Card>
                 </div>
             </div>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <Card>Bruh1</Card>
+                    <Card>Block 1</Card>
                 </div>
                 <div className={styles.col}>
-                    <Card>Bruh2</Card>
+                    <Card>Block 2</Card>
                 </div>
             </div>
-            <Card>Bruh1</Card>
+            <Card>Block Long</Card>
         </Fragment>
     )
 }

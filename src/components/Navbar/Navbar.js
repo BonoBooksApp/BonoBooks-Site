@@ -1,5 +1,6 @@
 import {Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 import {FaBars} from 'react-icons/fa';
+import Button from '../Button';
 
 const Navbar = (props) => {
     return(
@@ -21,6 +22,7 @@ const Navbar = (props) => {
                         <NavItem>
                             <NavLinks to="help">Help</NavLinks>
                         </NavItem>
+                        <Button>Download Now</Button>
                     </NavMenu>
                 </NavContainer>
             </Nav>
