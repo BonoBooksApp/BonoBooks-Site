@@ -1,0 +1,32 @@
+.media_scroller {
+    --_spacer: 0;
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+
+    padding: 0 var(--_spacer) var(--_spacer);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    overflow-x: hidden;
+}
+
+/* .media_element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    padding: 1rem;
+    background: var(--surface-2);
+    border-radius: var(--radius-2);
+    min-width: 100%;
+    width: 100%;
+} */
+
+.snaps_inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer);
+}
+
+.snaps_inline > * {
+    scroll-snap-align: start;
+}
